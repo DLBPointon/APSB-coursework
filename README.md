@@ -5,7 +5,7 @@ This repo contains the files used in completing the coursework component of APSB
 Repo Structure:
 
 - 1836811-APSB coursework.pdf - Coursework file
-- 1836811-APSB coursework.ipynb - Coursework file
+- 1836811-APSB coursework.ipynb - Coursework file - This has been run in VisualStudio.
 - bertozzi_model.py - Model from BioModels
 - leloup_model.py - Model from BioModels
 
@@ -13,7 +13,7 @@ Repo Structure:
   - The XML model files downloaded from BioModels (26th July 2022).
 
 - data_networkx
-  - Two fasta files used as input to BLASTN.
+  - Two FASTA files used as input to BLASTN.
   - Two TSV summerising the data taken from BLASTN and used in producing the networkx graphs.
 
 - MarkdownCoursework
@@ -22,3 +22,15 @@ Repo Structure:
 
 ![Networkx graph](MarkdownCoursework/output_192_0.png)
 Above is a graph produced using networkx for this coursework. It shows the scaffolds of 9 bees (Bombus sp. and Apis sp. )
+
+## Change Log
+
+###  30@27-07-2022
+
+BioModels website has crashed and notes added to the IPYNB to alert the user.
+
+###  30@28-07-2022
+
+- BioModels website is still down.
+
+- Removed dumps to local files for end user assessment, due to the size of these files it wasn't possible.
