@@ -2743,9 +2743,13 @@ plt.show()
 
 
 Purple = Bombus sp. and conenctions to Bombus sp. scaffolds.
+
 Mustard = Apis sp. and conenctions to Apis sp. scaffolds.
+
 Yellow = Scaffolds of connected species.
+
 Pink = FEM gene and its connections to scaffolds.
+
 Green = CSD gene and connections to scaffolds
 
 The above representation is what would be expected in a broad overview, the CSD gene arose through neofunctional duplication of the FEM gene which is ancestral in hymenopterans. 
