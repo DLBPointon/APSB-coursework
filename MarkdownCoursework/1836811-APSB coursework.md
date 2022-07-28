@@ -574,7 +574,7 @@ plt.plot(chromY_ZT03['chromStart'], chromY_ZT03['chromStart'])
 
 
 
-    [<matplotlib.lines.Line2D at 0x1cf4c3400>]
+    [<matplotlib.lines.Line2D at 0x1d14b4190>]
 
 
 
@@ -694,7 +694,7 @@ Cut down to one chromosome, like above we will use Y.
 
 ```python
 chromY_ZT00 = ZT00[ZT00['chrom'] == 'chrY']
-chromY_ZT03 = ZT03[ZT03['chrom'] == 'chraY']
+chromY_ZT03 = ZT03[ZT03['chrom'] == 'chrY']
 chromY_ZT06 = ZT06[ZT06['chrom'] == 'chrY']
 chromY_ZT09 = ZT09[ZT09['chrom'] == 'chrY']
 chromY_ZT12 = ZT12[ZT12['chrom'] == 'chrY']
@@ -1459,156 +1459,8 @@ allData = pd.read_csv('time_series_murine_methylation.tsv', sep='\t')
 
 
 ```python
-allData.drop(['Unnamed: 0'], axis=1)
+allData = allData.drop(['Unnamed: 0'], axis=1)
 ```
-
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>chromStart</th>
-      <th>ZT00</th>
-      <th>ZT03</th>
-      <th>ZT06</th>
-      <th>ZT09</th>
-      <th>ZT12</th>
-      <th>ZT16</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>1</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>2</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>3</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>4</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>90830899</th>
-      <td>90830899</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>90830900</th>
-      <td>90830900</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>90830901</th>
-      <td>90830901</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>90830902</th>
-      <td>90830902</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>90830903</th>
-      <td>90830903</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-    </tr>
-  </tbody>
-</table>
-<p>90830904 rows × 7 columns</p>
-</div>
-
-
 
 We can now plot chromosome length graphs using this data with the following matplotlib function to create horizontal subplots per time set.
 
@@ -1804,8 +1656,16 @@ sbmltoodepy.ParseAndCreateModel("./data_model/bertozzi.xml", outputFilePath = "b
 
 
 ```python
-from bertozzi_model import BertozziModel
+from data_model/bertozzi_model import BertozziModel
 ```
+
+
+      File "<ipython-input-45-a722da942c0b>", line 1
+        from data_model/bertozzi_model import BertozziModel
+                       ^
+    SyntaxError: invalid syntax
+
+
 
 
 ```python
@@ -2575,6 +2435,7 @@ Here a graph which maps the presence of the CSD (complementary sex determination
 import networkx as nx
 import pandas as pd
 import matplotlib.pyplot as plt
+import numpy as np
 ```
 
 Import the data output from BLASTN against:
@@ -2598,10 +2459,10 @@ Now read in the data, creating a new org column to group scaffold level hits to 
 
 
 ```python
-dataFEM = pd.read_csv("femVsApisBombus.tsv", '\t')
+dataFEM = pd.read_csv("./data_networkx/femVsApisBombus.tsv", '\t')
 dataFEM[['Org','accession']] = dataFEM['subject_id'].str.split('|', expand=True)
 
-dataCSD = pd.read_csv("csd.tsv", '\t')
+dataCSD = pd.read_csv("./data_networkx/csdVsApisBombus.tsv", '\t')
 dataCSD[['Org','accession']] = dataCSD['subject_id'].str.split('|', expand=True)
 ```
 
@@ -2940,8 +2801,3 @@ Coulson, RL., Yasui, DH., Dunaway, KW., Leufer, BI., Ciernia, AV., Zhu, Y., Mord
 Bertozzi, AL., Franco, E., Mohler, G., Short, MB., Sledge, D. 2020. The challenges of modeling and forecasting the spread of COVID-19. _Proc Natl Acad Sci U S A_ [e-journal]. 117(29). pp.16732-16738. doi: 10.1073/pnas.2006520117.
 
 Leloup, JC., Gonze, D., Goldbeter, A. 1999. Limit cycle models for circadian rhythms based on transcriptional regulation in Drosophila and Neurospora. _Journal of Biological Rhythms_ [e-journal]. 14(6). pp.433-448. doi: 10.1177/074873099129000948.
-
-
-```python
-
-```
