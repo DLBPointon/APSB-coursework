@@ -33,4 +33,4 @@ BioModels website has crashed and notes added to the IPYNB to alert the user.
 
 - BioModels website is still down.
 
-- Removed dumps to local files for end user assessment, due to the size of these files it wasn't possible.
+- Removed TSV dumps to local files for end user assessment, due to the size of these files it wasn't possible.
