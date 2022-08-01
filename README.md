@@ -4,7 +4,8 @@ This repo contains the files used in completing the coursework component of APSB
 
 Repo Structure:
 
-- 1836811-APSB coursework.pdf - Coursework file
+- 1836811-APSB coursework.pdf - Coursework file in PDF.
+- 1836811-APSB coursework.html - Coursework file in HTML.
 - 1836811-APSB coursework.ipynb - Coursework file - This has been run in VisualStudio.
 - bertozzi_model.py - Model from BioModels
 - leloup_model.py - Model from BioModels
@@ -34,3 +35,7 @@ BioModels website has crashed and notes added to the IPYNB to alert the user.
 - BioModels website is still down.
 
 - Removed TSV dumps to local files for end user assessment, due to the size of these files it wasn't possible.
+
+### 31@01-08-2022
+
+- BioModels is back up, modifying coursework to reflect it.
