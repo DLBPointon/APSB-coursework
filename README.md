@@ -39,3 +39,5 @@ BioModels website has crashed and notes added to the IPYNB to alert the user.
 ### 31@01-08-2022
 
 - BioModels is back up, modifying coursework to reflect it.
+
+- Added HTML copy of coursework - better than the PDF.
